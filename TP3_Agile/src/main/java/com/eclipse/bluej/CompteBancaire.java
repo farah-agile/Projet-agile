@@ -51,9 +51,11 @@ public class CompteBancaire
     public double sampleMethodRetirer(double r, String nc) {
     	this.num_compte = nc;
     	if (r<= this.solde)
-    	this.solde-=r;
+    	    this.solde-=r;
+    	else 
+    		System.out.println("Votre solde n'est pas sufisant");
     
-    	return this.solde ;
+    return this.solde ;
     	
     }
     public  String getNumCompte (){
