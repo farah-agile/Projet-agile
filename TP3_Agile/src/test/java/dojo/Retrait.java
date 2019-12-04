@@ -29,7 +29,7 @@ public class Retrait {
 	@Then("le solde est décrémenté suite au retrait du montant")
 	public void le_solde_est_décrémenté_suite_au_retrait_du_montant() {
 	    // Write code here that turns the phrase above into concrete actions
-		assertEquals(1000.0, 1000.0, 0.1);
+		assertEquals(1000.0,this.compte.getSolde(), 0.1);
 //	    throw new PendingException();
 	}
 

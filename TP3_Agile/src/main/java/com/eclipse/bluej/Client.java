@@ -18,12 +18,12 @@ public class Client
     /**
      * Constructor for objects of class Client
      */
-    public Client(CompteBancaire compte)
+    public Client(String n, String p,int a,CompteBancaire compte)
     {
     	  // initialise instance variables
-//       this.nom=n;
-//       this.prenom=p;
-//       this.age=a ; 
+       this.nom=n;
+       this.prenom=p;
+       this.age=a ; 
        this.compte = compte;
       
         
