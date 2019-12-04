@@ -13,7 +13,7 @@ public class Professeur
     // variables d'instance - remplacez l'exemple qui suit par le vôtre
     private int age;
     private String nom;
-    private ArrayList<Cours> coursList;
+    private ArrayList<TravauxDirigeDecorator> coursList;
     
     /**
      * Constructeur d'objets de classe Professeur
@@ -21,7 +21,7 @@ public class Professeur
     public Professeur(int age, String nom){
         this.age = age;
         this.nom = nom;
-        this.coursList = new ArrayList<Cours>();
+        this.coursList = new ArrayList<TravauxDirigeDecorator>();
     }
 
     /**
@@ -51,12 +51,12 @@ public class Professeur
         
     }
     
-    public void addCours(Cours cours) {
-    	this.coursList.add(cours);
+    public void addCours(TravauxDirigeDecorator travauxDirigeDecorator) {
+    	this.coursList.add(travauxDirigeDecorator);
   
     	
     }    
-    public ArrayList<Cours> getCoursList() {
+    public ArrayList<TravauxDirigeDecorator> getCoursList() {
     	return this.coursList;
     }
     
