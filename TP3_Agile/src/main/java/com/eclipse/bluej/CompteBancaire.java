@@ -58,6 +58,13 @@ public class CompteBancaire
     return this.solde ;
     	
     }
+    public void sampleMethodeVirer(CompteBancaire cb , Double montant)
+    {
+    	this.sampleMethodRetirer(montant, this.getNumCompte());
+    	cb.sampleMethodDeposer(montant, cb.getNumCompte());
+    System.out.println("le virement a été bien effectué");
+    	
+    }
     public  String getNumCompte (){
        
         return  this.num_compte;
