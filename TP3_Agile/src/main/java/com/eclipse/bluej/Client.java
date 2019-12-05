@@ -41,4 +41,8 @@ public class Client extends Personne
         // put your code here
        
     }
+    
+    public CompteBancaire getCompte() {
+    	return this.compte;
+    }
 }

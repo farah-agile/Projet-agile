@@ -13,6 +13,8 @@ public class Professeur
     // variables d'instance - remplacez l'exemple qui suit par le vôtre
     private int age;
     private String nom;
+    private String prenom;
+
     private ArrayList<TravauxDirigeDecorator> coursList;
     
     /**
