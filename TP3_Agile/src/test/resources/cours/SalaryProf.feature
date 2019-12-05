@@ -28,4 +28,3 @@ Feature: Gestion de salaire de prof
     Then La salaire de professeur est calcule
 
 
- 

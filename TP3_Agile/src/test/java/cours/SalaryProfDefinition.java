@@ -41,7 +41,6 @@ public class SalaryProfDefinition {
 
 	
     
-	
 	@When("Affectation de nouveau_cours au professeur ")
 	public void Affectation__de_nouveau_cours_au_professeur() {
 	    // Write code here that turns the phrase above into concrete actions
@@ -54,7 +53,7 @@ public class SalaryProfDefinition {
 	public void Le_salaire_de_professeur_est_calcule() {
 	    // Write code here that turns the phrase above into concrete actions
 		double total =prof1.calculSalary();
-	    assertEquals(755.0, total,0.05);
+	    assertEquals(1155.0, total,0.05);
 	}
 
 
