@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 
 import com.eclipse.bluej.CompteBancaire;
 
-public class Depot {
+public class DepotDefinition {
 	private CompteBancaire compte ;
 	
 	@Given("je veux deposer un montant dans mon compte")
@@ -21,7 +21,7 @@ public class Depot {
 	@When("je valide l'operation")
 	public void je_valide_l_operation() {
 	    // Write code here that turns the phrase above into concrete actions
-		this.compte.sampleMethodDeposer(1000,"FR87785569");
+		this.compte.deposer(1000,"FR87785569");
 //	    throw new PendingException();
 	}
 

@@ -7,7 +7,7 @@ package com.eclipse.bluej;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Client extends Personne
+public class Client 
 {
     // instance variables - replace the example below with your own
     private CompteBancaire compte;
@@ -35,9 +35,22 @@ public class Client extends Personne
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public double sampleMethodClient(double s, String n)
+    public double deposerArgent(double s, String n)
     {
-        return this.compte.sampleMethodDeposer(s,n);
+        return this.compte.deposer(s,n);
+        // put your code here
+       
+    }
+    public double retirerArgent(double s, String n)
+    {
+        return this.compte.retirer(s, n);
+        // put your code here
+       
+    }
+    public void virerArgent(CompteBancaire cb, double m)
+    {
+        this.compte.virer(cb, m);
+        System.out.println("le virement a été bien effectué");
         // put your code here
        
     }

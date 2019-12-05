@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 
 import com.eclipse.bluej.CompteBancaire;
 
-public class Retrait {
+public class RetraitDefinition {
 	
 	private CompteBancaire compte;
 	
@@ -22,7 +22,7 @@ public class Retrait {
 	@When("je valide l'operation du premier retrait")
 	public void je_valide_l_operation_du_premier_retrait() {
 	    // Write code here that turns the phrase above into concrete actions
-		this.compte.sampleMethodRetirer(1000,"FR1234535");
+		this.compte.retirer(1000,"FR1234535");
 //	    throw new PendingException();
 	}
 
@@ -47,7 +47,7 @@ public class Retrait {
 	@When("je valide l'operation du deuxieme retrait")
 	public void je_valide_l_operation_du_deuxieme_retrait() {
 	    // Write code here that turns the phrase above into concrete actions
-		this.compte.sampleMethodRetirer(3000,"FR1234535");
+		this.compte.retirer(3000,"FR1234535");
 //	    throw new PendingException();
 	}
 
