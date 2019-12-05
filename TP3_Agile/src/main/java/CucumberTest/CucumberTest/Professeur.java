@@ -2,6 +2,8 @@ package CucumberTest.CucumberTest;
 
 import java.util.ArrayList;
 
+import java.util.Iterator;
+
 /**
  * Décrivez votre classe Professeur ici.
  *
@@ -14,6 +16,7 @@ public class Professeur
     private int age;
     private String nom;
     private String prenom;
+   
 
     private ArrayList<TravauxDirigeDecorator> coursList;
     
@@ -66,6 +69,16 @@ public class Professeur
     	this.coursList.clear();
     }
             
+    
+    public int calculSalary(){
+    	int totalPrix=0;
+    	Iterator<TravauxDirigeDecorator> iterator = this.coursList.iterator();
+    	while (iterator.hasNext()) {
+    	    totalPrix=totalPrix+iterator.next().getPrix();
+    	}
+		
+    	return totalPrix;
+	}
 }
     
   
