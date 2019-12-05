@@ -22,7 +22,7 @@ public class TravauxDirigeDecorator extends Decorator
     
    @Override
    public double getPrix() {
-	   return this.cours.getPrix() + 10;
+	   return this.cours.getPrix() + 255;
    }
 
 	
