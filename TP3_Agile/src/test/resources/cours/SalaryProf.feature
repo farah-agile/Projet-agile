@@ -18,10 +18,11 @@
 #	pdf, code, junit, 
 ## (Comments)
 #Sample Feature Definition Template
+
 @tag
 Feature: Gestion de salaire de prof
   En tant que un prof, il voudrait calculer la salaire d'un prof
-
+@tag1
   Scenario: Calculer la salaire d'un prof en fonction de ses cours
     Given Un professeur possède une liste des cours
     When Affectation de nouveau_cours au professeur

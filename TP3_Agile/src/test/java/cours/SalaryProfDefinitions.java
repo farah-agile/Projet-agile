@@ -1,20 +1,47 @@
 package cours;
 
+import static org.junit.Assert.assertEquals;
+
+import CucumberTest.CucumberTest.CoursMagistral;
+import CucumberTest.CucumberTest.Professeur;
+import CucumberTest.CucumberTest.TravauxDirigeDecorator;
+import CucumberTest.CucumberTest.TravauxPratiqueDecorator;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
 
 public class SalaryProfDefinitions {
-  @Given("^you are in Given annotation$")
-  public void given() throws Throwable {
-  }
+	
+	Professeur prof1;
+	CoursMagistral  coursM;
+    TravauxDirigeDecorator coursTD;
+    TravauxPratiqueDecorator coursTP;
+	
+	
+  @Given("Un professeur possède une liste des cours")
+  public void Un_professeur_possède_une_liste_des_cours() {
+		 // Write code here that turns the phrase above into concrete actions
+     prof1 = new Professeur(25, "Benoit");
+     coursM = new CoursMagistral("math",200);
+     coursTD = new TravauxDirigeDecorator(coursTD);
+    
+     prof1.addCours(coursM);
+     prof1.addCours(coursTD);
+	}
 
-  @When("^you are in When annotation$")
-  public void when() throws Throwable {
-  }
+  @When("Affectation de nouveau_cours au professeur")
+  public void Affectation__de_nouveau_cours_au_professeur() {
+	    // Write code here that turns the phrase above into concrete actions
+		 coursTP = new TravauxPratiqueDecorator(coursTP);
+		 prof1.addCours(coursTP);
+	}
 
-  @Then("^you are in Then annotation$")
-  public void then() throws Throwable {
-  }
+  @Then(" La salaire de professeur est calcule")
+  public void Le_salaire_de_professeur_est_calcule() {
+	    // Write code here that turns the phrase above into concrete actions
+		double total =prof1.calculSalary();
+	    assertEquals(1155.0, total,0.05);
+	}
+
 
 }
