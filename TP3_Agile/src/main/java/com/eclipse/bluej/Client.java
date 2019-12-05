@@ -7,7 +7,7 @@ package com.eclipse.bluej;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Client
+public class Client extends Personne
 {
     // instance variables - replace the example below with your own
     private CompteBancaire compte;
