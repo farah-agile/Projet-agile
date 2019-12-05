@@ -73,8 +73,7 @@ public class Professeur
     public double calculSalary(){
     	double totalPrix=0;
     	for (Cours c : this.coursList) {
-    		totalPrix += c.getPrix();
-    		
+    		totalPrix += c.getPrix();    		
     	}
     	return totalPrix;
 	}
