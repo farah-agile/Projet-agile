@@ -7,29 +7,23 @@ package CucumberTest.CucumberTest;
  * @author (votre nom)
  * @version (un numéro de version ou une date)
  */
-public class TravauxDirigeDecorator
+public class TravauxDirigeDecorator extends Decorator
 {
-    // variables d'instance - remplacez l'exemple qui suit par le vôtre
-	private String nomCours;
+	private Cours cours;
     
     /**
-     * Constructeur d'objets de classe TravauxDirigeDecorator
+     * Constructeur d'objets de classe TravauxDirigeDecorator à partir de la class Cours magistrale
      */
-    public TravauxDirigeDecorator(String nom)
+    public TravauxDirigeDecorator(Cours cours)
     {
-        // initialisation des variables d'instance
-  
-        this.nomCours = nom;
+      
+        this.cours = cours;
     }
     
-    
-    public String getNomCours() {
-    	return this.nomCours;
-    }
-    
-    public void setNom(String nom) {
-    	this.nomCours = nom;
-    }
+   @Override
+   public double getPrix() {
+	   return this.cours.getPrix() + 10;
+   }
 
     
 }

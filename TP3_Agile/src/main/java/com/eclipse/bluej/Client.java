@@ -20,7 +20,7 @@ public class Client extends Personne
      */
     public Client(String n, String p,int a,CompteBancaire compte)
     {
-    	  // initialise instance variables
+    	// initialise instance variables
        this.nom=n;
        this.prenom=p;
        this.age=a ; 

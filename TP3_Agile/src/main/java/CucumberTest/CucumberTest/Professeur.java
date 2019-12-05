@@ -15,7 +15,7 @@ public class Professeur
     private String nom;
     private String prenom;
 
-    private ArrayList<TravauxDirigeDecorator> coursList;
+    private ArrayList<Cours> coursList;
     
     /**
      * Constructeur d'objets de classe Professeur
@@ -23,7 +23,7 @@ public class Professeur
     public Professeur(int age, String nom){
         this.age = age;
         this.nom = nom;
-        this.coursList = new ArrayList<TravauxDirigeDecorator>();
+        this.coursList = new ArrayList<Cours>();
     }
 
     /**
@@ -58,7 +58,7 @@ public class Professeur
   
     	
     }    
-    public ArrayList<TravauxDirigeDecorator> getCoursList() {
+    public ArrayList<Cours> getCoursList() {
     	return this.coursList;
     }
     

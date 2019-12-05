@@ -1,5 +1,5 @@
 package CucumberTest.CucumberTest;
 
-public abstract class Decorator {
+public abstract class Decorator extends Cours{
 
 }
