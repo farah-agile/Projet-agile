@@ -5,6 +5,8 @@ import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 
 import CucumberTest.CucumberTest.TravauxDirigeDecorator;
+import CucumberTest.CucumberTest.Cours;
+import CucumberTest.CucumberTest.CoursMagistral;
 import CucumberTest.CucumberTest.Professeur;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
@@ -13,13 +15,15 @@ import cucumber.api.java.en.When;
 
 public class CoursDefinitions {
 	Professeur prof1;
+	CoursMagistral  coursM;
     TravauxDirigeDecorator cours1;
     Professeur prof2;
 	@Given("Affecter un cours Math pour professeur Benoit")
 	public void affecter_un_cours_Math_pour_professeur_Benoit() {
 		 // Write code here that turns the phrase above into concrete actions
         prof1 = new Professeur(25, "Benoit");
-        cours1 = new TravauxDirigeDecorator("Math");
+        coursM = new CoursMagistral("math",300);
+        cours1 = new TravauxDirigeDecorator(coursM);
         //cours1.setProf(prof1);
 	    // Write code here that turns the phrase above into concrete actions
 	    
@@ -35,7 +39,7 @@ public class CoursDefinitions {
 	@Then("Le prof possèdes un cours")
 	public void le_prof_possèdes_un_cours() {
 	    // Write code here that turns the phrase above into concrete actions
-		ArrayList<TravauxDirigeDecorator> coursList =  prof1.getCoursList();
+		ArrayList<Cours> coursList =  prof1.getCoursList();
         assertEquals(1, coursList.size());
 	    
 	}
@@ -43,8 +47,8 @@ public class CoursDefinitions {
 
 	@Given("Une liste de cours pour un professeur")
     public void une_liste_de_cours_pour_un_professeur() {
-    	TravauxDirigeDecorator cours2 = new TravauxDirigeDecorator("anglais");
-    	TravauxDirigeDecorator cours3 = new TravauxDirigeDecorator("espa");
+    	CoursMagistral cours2 = new CoursMagistral("anglais",300);
+    	CoursMagistral cours3 = new CoursMagistral("espa",456);
     	prof2 = new Professeur(35,"Allai");
     	prof2.addCours(cours2);
     	prof2.addCours(cours3);

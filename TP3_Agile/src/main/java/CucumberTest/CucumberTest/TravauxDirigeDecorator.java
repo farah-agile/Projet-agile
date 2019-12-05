@@ -10,7 +10,7 @@ package CucumberTest.CucumberTest;
 public class TravauxDirigeDecorator extends Decorator
 {
 	private Cours cours;
-    
+
     /**
      * Constructeur d'objets de classe TravauxDirigeDecorator à partir de la class Cours magistrale
      */
@@ -25,5 +25,6 @@ public class TravauxDirigeDecorator extends Decorator
 	   return this.cours.getPrix() + 10;
    }
 
+	
     
 }
