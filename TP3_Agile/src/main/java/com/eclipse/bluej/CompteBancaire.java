@@ -34,7 +34,7 @@ public class CompteBancaire
      */
    
     // Methode de depot dans le compte
-    public double sampleMethodDeposer(double y , String num_c)
+    public double deposer(double y , String num_c)
     {
         // put yothur code here
         this.num_compte = num_c;
@@ -48,7 +48,7 @@ public class CompteBancaire
 		System.out.println("le solde associ� � au num�ro de compte"+this.num_compte+"est:"+this.solde);
 	}
     // Methode de retrait du compte
-    public double sampleMethodRetirer(double r, String nc) {
+    public double retirer(double r, String nc) {
     	this.num_compte = nc;
     	if (r<= this.solde)
     	    this.solde-=r;
@@ -58,10 +58,10 @@ public class CompteBancaire
     return this.solde ;
     	
     }
-    public void sampleMethodeVirer(CompteBancaire cb , Double montant)
+    public void virer(CompteBancaire cb , Double montant)
     {
-    	this.sampleMethodRetirer(montant, this.getNumCompte());
-    	cb.sampleMethodDeposer(montant, cb.getNumCompte());
+    	this.retirer(montant, this.getNumCompte());
+    	cb.deposer(montant, cb.getNumCompte());
     System.out.println("le virement a été bien effectué");
     	
     }

@@ -17,7 +17,7 @@
 ## (Comments)
 #Sample Feature Definition Template
 @tag
-Feature: Operation_001
+Feature: Operation_002
   En tant que client je souhaite effectuer l'operation de dépôt
    d’argent dans mon compte bancaire identifié par un numéro de compte.
 

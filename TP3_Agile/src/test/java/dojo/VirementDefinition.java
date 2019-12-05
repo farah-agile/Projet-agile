@@ -6,7 +6,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;  
 import cucumber.api.java.en.When;
 
-public class Virement {
+public class VirementDefinition {
 	
 	private CompteBancaire compte ;
 	
@@ -21,7 +21,7 @@ public class Virement {
 	@When("Je valide l’opération")
 	public void je_valide_l_opération() {
 	    // Write code here that turns the phrase above into concrete actions
-		this.compte.sampleMethodeVirer(compte, 100.00);
+		this.compte.virer(compte, 100.00);
 //	    throw new PendingException();
 	}
 
