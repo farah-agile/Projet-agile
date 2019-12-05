@@ -41,7 +41,6 @@ public class SalaryProfDefinition {
 
 	
     
-    Then
 	
 	@When("Affectation de nouveau_cours au professeur ")
 	public void Affectation__de_nouveau_cours_au_professeur() {
