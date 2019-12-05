@@ -25,8 +25,8 @@ public class SalaryProfDefinition {
     
     
    
-	@Given("Un professeur possède les cours")
-	public void Un_professeur_possède_les_cours() {
+	@Given("Un professeur possède une liste des cours")
+	public void Un_professeur_possède_une_liste_des_cours() {
 		 // Write code here that turns the phrase above into concrete actions
         prof1 = new Professeur(25, "Benoit");
         coursM = new CoursMagistral("math",200);
@@ -39,16 +39,20 @@ public class SalaryProfDefinition {
 	    
 	}
 
-	@When("Affectation de cours du professeur est changée ")
-	public void Affectation__de_cours_du_professeur_est_changee() {
+	
+    
+    Then
+	
+	@When("Affectation de nouveau_cours au professeur ")
+	public void Affectation__de_nouveau_cours_au_professeur() {
 	    // Write code here that turns the phrase above into concrete actions
 		 coursTP = new TravauxPratiqueDecorator(coursTP);
 		 prof1.addCours(coursTP);
 	}
 	
 	
-	@Then("Le professeur obtient un bon resultat de salaire")
-	public void Le_professeur_obtient_un_bon_resultat_de_salaire() {
+	@Then(" La salaire de professeur est calcule")
+	public void Le_salaire_de_professeur_est_calcule() {
 	    // Write code here that turns the phrase above into concrete actions
 		double total =prof1.calculSalary();
 	    assertEquals(755.0, total,0.05);
