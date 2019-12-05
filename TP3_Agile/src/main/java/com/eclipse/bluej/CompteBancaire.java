@@ -51,14 +51,11 @@ public class CompteBancaire
     public double retirer(double r, String nc) {
     	this.num_compte = nc;
     	if (r<= this.solde)
-    	    this.solde-=r;
-    	else 
-    		System.out.println("Votre solde n'est pas sufisant");
-    
-    return this.solde ;
+    	    this.solde-=r;	
+        return this.solde ;
     	
     }
-    public void virer(CompteBancaire cb , Double montant)
+    public void virer(CompteBancaire cb , double montant)
     {
     	this.retirer(montant, this.getNumCompte());
     	cb.deposer(montant, cb.getNumCompte());
