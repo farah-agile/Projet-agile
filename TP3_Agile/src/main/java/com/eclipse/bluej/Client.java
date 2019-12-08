@@ -47,11 +47,11 @@ public class Client
         // put your code here
        
     }
-    public void virerArgent(CompteBancaire cb, double m)
+    public double virerArgent(CompteBancaire cb, double m)
     {
         this.compte.virer(cb, m);
         System.out.println("le virement a été bien effectué");
-        // put your code here
+        return cb.getSolde();
        
     }
     

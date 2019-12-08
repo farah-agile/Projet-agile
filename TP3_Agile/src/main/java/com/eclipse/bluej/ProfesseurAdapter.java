@@ -10,10 +10,14 @@ public class ProfesseurAdapter extends Client {
 		this.professeur = professeur;
 	}
 	
-	 public void virerArgent(CompteBancaire cb, double m) {
-	
+	 public double virerArgent(CompteBancaire cb, double m) {
+	   
 		 m = (double)professeur.calculSalary();
+		 System.out.println("le montant apres est "+m);
 		 this.getCompte().virer(cb, m);
+		 return cb.getSolde();
+		 
 	 }
+	 
 	 
 }
