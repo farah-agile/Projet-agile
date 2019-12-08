@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="CucumberTest.CucumberTest.Cours" project="TP3_Agile" 
     file="/TP3_Agile/src/main/java/CucumberTest/CucumberTest/Cours.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="181" y="122"/>    
+    <position height="-1" width="-1" x="160" y="95"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="CucumberTest.CucumberTest.CoursMagistral" project="TP3_Agile" 
     file="/TP3_Agile/src/main/java/CucumberTest/CucumberTest/CoursMagistral.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="170" y="320"/>    
+    <position height="-1" width="-1" x="153" y="286"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="CucumberTest.CucumberTest.Decorator" project="TP3_Agile" 
     file="/TP3_Agile/src/main/java/CucumberTest/CucumberTest/Decorator.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="445" y="211"/>    
+    <position height="-1" width="-1" x="495" y="82"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -31,7 +31,7 @@
   <class id="4" language="java" name="CucumberTest.CucumberTest.TravauxDirigeDecorator" project="TP3_Agile" 
     file="/TP3_Agile/src/main/java/CucumberTest/CucumberTest/TravauxDirigeDecorator.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="446" y="373"/>    
+    <position height="-1" width="-1" x="351" y="281"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -41,7 +41,7 @@
   <class id="5" language="java" name="CucumberTest.CucumberTest.TravauxPratiqueDecorator" project="TP3_Agile" 
     file="/TP3_Agile/src/main/java/CucumberTest/CucumberTest/TravauxPratiqueDecorator.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="435" y="64"/>    
+    <position height="-1" width="-1" x="572" y="284"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
