@@ -12,7 +12,7 @@ public class TravauxDirigeDecorator extends Decorator
 	private Cours cours;
 
     /**
-     * Constructeur d'objets de classe TravauxDirigeDecorator à partir de la class Cours magistrale
+     * Constructeur d'objets de classe TravauxDirigeDecorator à partir de la class Cours magistral
      */
     public TravauxDirigeDecorator(Cours cours)
     {
