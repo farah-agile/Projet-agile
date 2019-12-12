@@ -13,11 +13,25 @@ public class ProfesseurAdapter extends Client {
 	 public double virerArgent(CompteBancaire cb, double m) {
 	   
 		 m = (double)professeur.calculSalary();
-		 System.out.println("le montant apres est "+m);
+		 System.out.println("le salaire est  "+m);
 		 this.getCompte().virer(cb, m);
 		 return cb.getSolde();
 		 
 	 }
+	 public double deposerArgent(double s, String n)
+	    {
+		    s = (double)professeur.calculSalary();
+	         this.getCompte().deposer(s,n);
+	         return getCompte().getSolde();  
+	    }
+	 
+	 public double retirerArgent(double s, String n)
+	    {
+	        
+		 return this.getCompte().retirer(s, n);
+	       
+	    }
+	
 	 
 	 
 }
