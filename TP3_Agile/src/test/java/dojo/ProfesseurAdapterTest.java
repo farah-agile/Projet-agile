@@ -16,18 +16,10 @@ import CucumberTest.CucumberTest.TravauxDirigeDecorator;
 
 public class ProfesseurAdapterTest {
 
-	@Before
-	public void setUp() throws Exception {
-	}
-
-	@After
-	public void tearDown() throws Exception {
-	}
-
 	@Test
 	public void testVirerArgent() {
 		Professeur professeur;
-		CompteBancaire c1 = new CompteBancaire("FR1235467",3000);
+		CompteBancaire c1 = new CompteBancaire("FR1235467",6000);
 		CompteBancaire c2 = new CompteBancaire("FR7654321",3000);
 		professeur = new Professeur(23,"farah");
 		CoursMagistral cours = new CoursMagistral("Math",2300);
@@ -38,6 +30,8 @@ public class ProfesseurAdapterTest {
 		double m = professeur.calculSalary();
 		
 		assertEquals(3000+m, profAdap.virerArgent(c2, m) , 0.1);
+		System.out.println("le nouveau solde du compte c2 est "+c2.getSolde());
+		System.out.println("le nouveau solde du compte c1 est "+c1.getSolde());
 	}
 
 }
